@@ -19,7 +19,7 @@ def set_cursor_pos(x, y):
 def countdown_animation(root):
     canvas = Canvas(root, width=screen_width, height=screen_height, bg="white", highlightthickness=0)
     canvas.pack()
-    countdown_label = Label(canvas, text="", font=("Arial", 16, "bold"), fg="red")
+    countdown_label = Label(canvas, text="", font=("Hellvetica", 16, "bold"), fg="black")
     countdown_label.place(relx=0.5, rely=0.5, anchor="center")
     if root.mode == "record":
         countdown_label.config(text="Enregistrement de Souris et de Clavier")
@@ -50,7 +50,7 @@ def get_next_filename(base_dir="dataMouseKeybord", base_name="mouse_keyboard_act
             return filename
         i += 1
 
-def record():
+def record(should_stop_callback=lambda: False):
     count_down_animation_config("record")
     print("Recording started. Move the mouse around, perform actions, and type on the keyboard. Press Ctrl + C to stop.")
     actions = []
@@ -96,7 +96,7 @@ def record():
     keyboard.hook(on_key_event)
 
     try:
-        while True:
+        while not should_stop_callback():
             current_time = time.time()
             time_diff_container[0] = current_time - previous_time
             x, y = mouse.get_position()

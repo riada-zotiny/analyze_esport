@@ -1,40 +1,52 @@
-# Import Module
-from tkinter import *
-
-# create root window
-root = Tk()
-
-# root window title and dimension
-root.title("Enregistrement de souris")
-# Set geometry(widthxheight)
-root.geometry('350x200')
+import tkinter as tk
+from tkinter import filedialog, messagebox
+from threading import Thread
+from recordMouseKeyboardMovement import record, replay
 
 
-# adding menu bar in root window
-# new item in menu bar labelled as 'New'
+recording_flag = {"stop": False}
+record_thread = None
+
+def should_stop():
+    return recording_flag["stop"]
+
+def start_record():
+    global record_thread
+    recording_flag["stop"] = False
+    record_thread = Thread(target=lambda: record(should_stop_callback=should_stop))
+    record_thread.start()
+
+def stop_record():
+    recording_flag["stop"] = True
+    messagebox.showinfo("Arrêt", "L'enregistrement va s'arrêter...")
+
+def start_replay():
+    file_path = filedialog.askopenfilename(
+        title="Choisir un fichier JSON",
+        filetypes=[("Fichiers JSON", "*.json")],
+        initialdir="dataMouseKeybord"
+    )
+    if file_path:
+        try:
+            filename = file_path.split("/")[-1] if "/" in file_path else file_path.split("\\")[-1]
+            replay(filename)
+        except Exception as e:
+            messagebox.showerror("Erreur", str(e))
 
 
-# adding a label to the root window
-lbl = Label(root, text = "Are you a Geek?")
-lbl.grid()
+root = tk.Tk()
+root.title("Contrôle Souris & Clavier")
+root.geometry("400x250")
+root.resizable(False, False)
 
-# adding Entry Field
-txt = Entry(root, width=10)
-txt.grid(column =1, row =0)
+# Boutons
+record_button = tk.Button(root, text="Enregistrer", command=start_record, font=("Arial", 10), bg="green", fg="white", width=20)
+record_button.pack(pady=10)
 
+stop_button = tk.Button(root, text="Arrêter", command=stop_record, font=("Arial", 10), bg="red", fg="white", width=20)
+stop_button.pack(pady=10)
 
-# function to display user text when
-# button is clicked
-def clicked():
+replay_button = tk.Button(root, text="Rejouer", command=start_replay, font=("Arial", 10), bg="blue", fg="white", width=20)
+replay_button.pack(pady=10)
 
-    res = "You wrote" + txt.get()
-    lbl.configure(text = res)
-
-# button widget with red color text inside
-btn = Button(root, text = "Click me" ,
-             fg = "red", command=clicked)
-# Set Button Grid
-btn.grid(column=2, row=0)
-
-# Execute Tkinter
 root.mainloop()
