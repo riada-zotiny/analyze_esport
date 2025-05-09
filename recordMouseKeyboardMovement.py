@@ -52,10 +52,11 @@ def get_next_filename(base_dir="dataMouseKeybord", base_name="mouse_keyboard_act
 
 def record(should_stop_callback=lambda: False):
     count_down_animation_config("record")
-    print("Recording started. Move the mouse around, perform actions, and type on the keyboard. Press Ctrl + C to stop.")
+    print("Recording started. Move the mouse around, perform actions, and type on the keyboard.")
+
     actions = []
     previous_time = time.time()
-    time_diff_container = [0] 
+    time_diff_container = [0]
 
     def on_move(x, y):
         if 0 <= x < screen_width and 0 <= y < screen_height:
@@ -63,7 +64,7 @@ def record(should_stop_callback=lambda: False):
                 "action": "move",
                 "position": (x, y),
                 "time_diff": time_diff_container[0],
-                "timestamp": datetime.now().isoformat() 
+                "timestamp": datetime.now().isoformat()
             })
 
     def on_click(x, y, button, pressed):
@@ -93,34 +94,29 @@ def record(should_stop_callback=lambda: False):
             "event_type": event.event_type,
             "time_diff": time_diff_container[0],
             "timestamp": datetime.now().isoformat()
-            
         })
 
     listener = pynput_mouse.Listener(on_move=on_move, on_click=on_click, on_scroll=on_scroll)
     listener.start()
     keyboard.hook(on_key_event)
 
+    filename = get_next_filename()
+    path = os.path.join("dataMouseKeybord", filename)
+
     try:
         while not should_stop_callback():
             current_time = time.time()
             time_diff_container[0] = current_time - previous_time
-            x, y = mouse.get_position()
-            x = max(0, min(x, screen_width - 1))
-            y = max(0, min(y, screen_height - 1))
-
-            set_cursor_pos(x, y)
+            previous_time = current_time
             time.sleep(0.05)
-
-    except KeyboardInterrupt:
-        print("Recording stopped.")
+    finally:
         listener.stop()
         keyboard.unhook_all()
-
-        filename = get_next_filename()
-        path = os.path.join("dataMouseKeybord", filename)
+        os.makedirs("dataMouseKeybord", exist_ok=True)
         with open(path, 'w') as file:
-            json.dump(actions, file)
+            json.dump(actions, file, indent=2)
         print(f"Actions saved to: {path}")
+        return filename
 
 def replay(filename, key_delay=0.1):
     count_down_animation_config("replay")

@@ -10,15 +10,29 @@ record_thread = None
 def should_stop():
     return recording_flag["stop"]
 
+recorded_filename = {"name": None}
+
 def start_record():
     global record_thread
     recording_flag["stop"] = False
-    record_thread = Thread(target=lambda: record(should_stop_callback=should_stop))
+
+    def run_record():
+        filename = record(should_stop_callback=should_stop)
+        recorded_filename["name"] = filename
+
+    record_thread = Thread(target=run_record)
+    record_thread.daemon = True
     record_thread.start()
 
 def stop_record():
     recording_flag["stop"] = True
-    messagebox.showinfo("Arrêt", "L'enregistrement va s'arrêter...")
+    if record_thread and record_thread.is_alive():
+        record_thread.join()
+    if recorded_filename["name"]:
+        messagebox.showinfo("Enregistrement terminé", f"Fichier enregistré : {recorded_filename['name']}")
+    else:
+        messagebox.showwarning("Enregistrement", "Aucun fichier n'a été enregistré.")
+
 
 def start_replay():
     file_path = filedialog.askopenfilename(
