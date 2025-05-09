@@ -62,7 +62,8 @@ def record(should_stop_callback=lambda: False):
             actions.append({
                 "action": "move",
                 "position": (x, y),
-                "time_diff": time_diff_container[0]
+                "time_diff": time_diff_container[0],
+                "timestamp": datetime.now().isoformat() 
             })
 
     def on_click(x, y, button, pressed):
@@ -71,7 +72,8 @@ def record(should_stop_callback=lambda: False):
                 "action": "press" if pressed else "release",
                 "button": str(button),
                 "position": (x, y),
-                "time_diff": time_diff_container[0]
+                "time_diff": time_diff_container[0],
+                "timestamp": datetime.now().isoformat()
             })
 
     def on_scroll(x, y, dx, dy):
@@ -80,7 +82,8 @@ def record(should_stop_callback=lambda: False):
                 "action": "scroll",
                 "position": (x, y),
                 "scroll": dy,
-                "time_diff": time_diff_container[0]
+                "time_diff": time_diff_container[0],
+                "timestamp": datetime.now().isoformat()
             })
 
     def on_key_event(event):
@@ -88,7 +91,9 @@ def record(should_stop_callback=lambda: False):
             "action": "key",
             "key": event.name,
             "event_type": event.event_type,
-            "time_diff": time_diff_container[0]
+            "time_diff": time_diff_container[0],
+            "timestamp": datetime.now().isoformat()
+            
         })
 
     listener = pynput_mouse.Listener(on_move=on_move, on_click=on_click, on_scroll=on_scroll)
