@@ -10,3 +10,4 @@ bash
 ```
 python recordMouseKeyboardMovement.py record --file mouse_actions.json
 ```
+En supplément, j'ai pu developpé une interface graphique à l'aide de bibliotheque tkinter
