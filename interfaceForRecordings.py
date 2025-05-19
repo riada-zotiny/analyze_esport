@@ -43,7 +43,7 @@ def start_replay():
     if file_path:
         try:
             filename = file_path.split("/")[-1] if "/" in file_path else file_path.split("\\")[-1]
-            replay(filename)
+            replay(filename, key_delay=0, on_finish=root.quit)
         except Exception as e:
             messagebox.showerror("Erreur", str(e))
 

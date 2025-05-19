@@ -74,8 +74,10 @@ def record(should_stop_callback=lambda: False):
                 "button": str(button),
                 "position": (x, y),
                 "time_diff": time_diff_container[0],
-                "timestamp": datetime.now().isoformat()
-            })
+                "timestamp": datetime.now().isoformat(),
+            })        
+
+
 
     def on_scroll(x, y, dx, dy):
         if 0 <= x < screen_width and 0 <= y < screen_height:
@@ -117,8 +119,7 @@ def record(should_stop_callback=lambda: False):
             json.dump(actions, file, indent=2)
         print(f"Actions saved to: {path}")
         return filename
-
-def replay(filename, key_delay=0.1):
+def replay(filename, key_delay=0.1, on_finish=None):
     count_down_animation_config("replay")
     with open("dataMouseKeybord/" + filename, 'r') as file:
         actions = json.load(file)
@@ -172,6 +173,8 @@ def replay(filename, key_delay=0.1):
                 time.sleep(key_delay)
 
         print("Replay complete.")
+        if on_finish:
+            on_finish()
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Mouse and Keyboard Recorder/Replayer')

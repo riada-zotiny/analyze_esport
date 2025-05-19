@@ -1,0 +1,128 @@
+[
+  {
+    "action": "key",
+    "key": "a",
+    "event_type": "down",
+    "time_diff": 0.05040717124938965,
+    "timestamp": "2025-05-16T10:22:03.014833"
+  },
+  {
+    "action": "key",
+    "key": "a",
+    "event_type": "up",
+    "time_diff": 0.050545454025268555,
+    "timestamp": "2025-05-16T10:22:03.160323"
+  },
+  {
+    "action": "key",
+    "key": "m",
+    "event_type": "down",
+    "time_diff": 0.05042243003845215,
+    "timestamp": "2025-05-16T10:22:03.319733"
+  },
+  {
+    "action": "key",
+    "key": "m",
+    "event_type": "up",
+    "time_diff": 0.050316810607910156,
+    "timestamp": "2025-05-16T10:22:03.417331"
+  },
+  {
+    "action": "key",
+    "key": "a",
+    "event_type": "down",
+    "time_diff": 0.05054044723510742,
+    "timestamp": "2025-05-16T10:22:03.485853"
+  },
+  {
+    "action": "key",
+    "key": "a",
+    "event_type": "up",
+    "time_diff": 0.050359249114990234,
+    "timestamp": "2025-05-16T10:22:03.595655"
+  },
+  {
+    "action": "key",
+    "key": "l",
+    "event_type": "down",
+    "time_diff": 0.05058002471923828,
+    "timestamp": "2025-05-16T10:22:03.707563"
+  },
+  {
+    "action": "key",
+    "key": "l",
+    "event_type": "up",
+    "time_diff": 0.05024313926696777,
+    "timestamp": "2025-05-16T10:22:03.786512"
+  },
+  {
+    "action": "key",
+    "key": "a",
+    "event_type": "down",
+    "time_diff": 0.050669193267822266,
+    "timestamp": "2025-05-16T10:22:03.849451"
+  },
+  {
+    "action": "key",
+    "key": "a",
+    "event_type": "up",
+    "time_diff": 0.0502161979675293,
+    "timestamp": "2025-05-16T10:22:03.916742"
+  },
+  {
+    "action": "key",
+    "key": "g",
+    "event_type": "down",
+    "time_diff": 0.05022716522216797,
+    "timestamp": "2025-05-16T10:22:04.129828"
+  },
+  {
+    "action": "key",
+    "key": "g",
+    "event_type": "up",
+    "time_diff": 0.05030345916748047,
+    "timestamp": "2025-05-16T10:22:04.161060"
+  },
+  {
+    "action": "key",
+    "key": "c",
+    "event_type": "down",
+    "time_diff": 0.05054473876953125,
+    "timestamp": "2025-05-16T10:22:04.361208"
+  },
+  {
+    "action": "key",
+    "key": "e",
+    "event_type": "down",
+    "time_diff": 0.05074906349182129,
+    "timestamp": "2025-05-16T10:22:04.390894"
+  },
+  {
+    "action": "key",
+    "key": "e",
+    "event_type": "up",
+    "time_diff": 0.05074906349182129,
+    "timestamp": "2025-05-16T10:22:04.409723"
+  },
+  {
+    "action": "key",
+    "key": "c",
+    "event_type": "up",
+    "time_diff": 0.050676584243774414,
+    "timestamp": "2025-05-16T10:22:04.443996"
+  },
+  {
+    "action": "key",
+    "key": "u",
+    "event_type": "down",
+    "time_diff": 0.050702810287475586,
+    "timestamp": "2025-05-16T10:22:04.597371"
+  },
+  {
+    "action": "key",
+    "key": "u",
+    "event_type": "up",
+    "time_diff": 0.050641775131225586,
+    "timestamp": "2025-05-16T10:22:04.679843"
+  }
+]

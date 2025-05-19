@@ -3,3 +3,4 @@ pynput
 pyautogui
 mouse
 argparse
+git+https://github.com/tobiipro/g3pylib.git
