@@ -110,7 +110,12 @@ def record(should_stop_callback=lambda: False):
             current_time = time.time()
             time_diff_container[0] = current_time - previous_time
             previous_time = current_time
-            time.sleep(0.05)
+            x, y = mouse.get_position()
+            x = max(0, min(x, screen_width - 1))
+            y = max(0, min(y, screen_height - 1))
+
+            set_cursor_pos(x, y)
+            time.sleep(0.05)  # FAIRE ATTETION POUR POUVOIR  VOIR LE TEMPS ECOULE !
     finally:
         listener.stop()
         keyboard.unhook_all()
