@@ -1,35 +1,41 @@
 import asyncio
-import logging
-import os
+from g3pylib import TobiiG3
 
-import dotenv
+# Adresse IP locale en mode point d'accès
+G3_ADDRESS = "192.168.75.51"
 
-from g3pylib import connect_to_glasses
+async def main():
+    # Étape 1 : Connexion aux lunettes
+    glasses = TobiiG3(G3_ADDRESS)
+    await glasses.connect()
+    print("✅ Connecté aux Tobii Pro Glasses 3")
 
-logging.basicConfig(level=logging.INFO)
+    # Étape 2 : Démarrer l'enregistrement
+    await glasses.api("recorder!start", method="POST", body=[])
+    print("🎥 Enregistrement démarré")
 
+    # Étape 3 : Définir un nom lisible pour l'enregistrement
+    await glasses.api("recorder.visible-name", method="POST", body="Test_Enregistrement")
+    
+    # Étape 4 : Ajouter un événement personnalisé
+    await asyncio.sleep(2)  # Simuler un délai
+    await glasses.api("recorder!send-event", method="POST", body=[
+        "evenement", {"note": "Début de tâche"}
+    ])
+    print("📝 Événement ajouté")
 
-async def access_recordings():
-    async with connect_to_glasses.with_hostname(os.environ["G3_HOSTNAME"]) as g3:
-        async with g3.recordings.keep_updated_in_context():
-            logging.info(
-                f"Recordings before: {list(map(lambda r: r.uuid, g3.recordings.children))}"
-            )
-            await g3.recorder.start()
-            logging.info("Creating new recording")
-            await asyncio.sleep(3)
-            await g3.recorder.stop()
-            logging.info(
-                f"Recordings after: {list(map(lambda r: r.uuid, g3.recordings.children))}"
-            )
-            creation_time = await g3.recordings[0].get_created()
-            logging.info(f"Creation time of last recording in UTC: {creation_time}")
+    # Attendre un peu pendant que l'enregistrement tourne
+    await asyncio.sleep(10)
 
+    # Étape 5 : Arrêter l'enregistrement
+    await glasses.api("recorder!stop", method="POST", body=[])
+    print("🛑 Enregistrement arrêté")
 
-def main():
-    asyncio.run(access_recordings())
+    # Déconnexion propre
+    await glasses.disconnect()
+    print("🔌 Déconnecté")
 
-
+# Lancer le programme
 if __name__ == "__main__":
-    dotenv.load_dotenv()
-    main()
+    asyncio.run(main())
+j

@@ -4,3 +4,4 @@ pyautogui
 mouse
 argparse
 git+https://github.com/tobiipro/g3pylib.git
+git+https://github.com/tobii/glasses3-pylib.git
