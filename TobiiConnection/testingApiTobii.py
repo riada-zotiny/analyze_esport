@@ -1,41 +1,33 @@
 import asyncio
-from g3pylib import TobiiG3
+from g3pylib import connect_to_glasses
 
-# Adresse IP locale en mode point d'accès
-G3_ADDRESS = "192.168.75.51"
+G3_HOSTNAME = "192.168.75.51"
 
+async def connect():
+    async with connect_to_glasses.with_hostname( G3_HOSTNAME, using_zeroconf=False, using_ip=True) as g3:
+        serial = await g3.system.get_recording_unit_serial()
+        print(f"Connecté à : {serial} ")
+
+        await g3.recorder.start()
+        print("Enregistrement a comméncé !")
+
+        await asyncio.sleep(10)
+
+        await g3.recorder.stop()
+        print("Enregistrement terminéé ")
+
+       
+       
 async def main():
-    # Étape 1 : Connexion aux lunettes
-    glasses = TobiiG3(G3_ADDRESS)
-    await glasses.connect()
-    print("✅ Connecté aux Tobii Pro Glasses 3")
+    await connect()
 
-    # Étape 2 : Démarrer l'enregistrement
-    await glasses.api("recorder!start", method="POST", body=[])
-    print("🎥 Enregistrement démarré")
 
-    # Étape 3 : Définir un nom lisible pour l'enregistrement
-    await glasses.api("recorder.visible-name", method="POST", body="Test_Enregistrement")
-    
-    # Étape 4 : Ajouter un événement personnalisé
-    await asyncio.sleep(2)  # Simuler un délai
-    await glasses.api("recorder!send-event", method="POST", body=[
-        "evenement", {"note": "Début de tâche"}
-    ])
-    print("📝 Événement ajouté")
-
-    # Attendre un peu pendant que l'enregistrement tourne
-    await asyncio.sleep(10)
-
-    # Étape 5 : Arrêter l'enregistrement
-    await glasses.api("recorder!stop", method="POST", body=[])
-    print("🛑 Enregistrement arrêté")
-
-    # Déconnexion propre
-    await glasses.disconnect()
-    print("🔌 Déconnecté")
-
-# Lancer le programme
-if __name__ == "__main__":
-    asyncio.run(main())
-j
+asyncio.run(main())
+"""
+['APIComponent', 'Any', 'AsyncIterator', 'Calibrate', 'Coroutine', 'DEFAULT_HTTP_PORT', 'DEFAULT_RTSP_LIVE_PATH',
+ 'DEFAULT_RTSP_PORT', 'DEFAULT_WEBSOCKET_PATH', 'FeatureNotAvailableError', 'G3Service', 'G3ServiceDiscovery',
+ 'G3WebSocketClientProtocol', 'Generator', 'Glasses3', 'LoggerLike', 'Optional', 'Recorder', 'Recordings', 'Rudimentary',
+ 'Settings', 'Streams', 'System', 'TracebackType', 'Tuple', 'Type', 'URI', '__builtins__', '__cached__', '__doc__', '__file__',
+ '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', '_logger', '_utils', 'annotations',
+ 'asynccontextmanager', 'calibrate', 'cast', 'connect_to_glasses', 'exceptions', 'g3pylib', 'g3typing', 'logging', 'recorder',
+ 'recordings', 'rudimentary', 'settings', 'streams', 'system', 'websocket', 'zeroconf']"""
