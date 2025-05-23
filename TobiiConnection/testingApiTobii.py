@@ -8,6 +8,7 @@ from g3pylib import (
 from g3pylib.zeroconf import DEFAULT_WEBSOCKET_PATH, G3ServiceDiscovery
 
 G3_HOSTNAME = "TG03B-080202027181.local"
+adresse_ip = "192.168.75.51"
 
 async def test_connect_with_service_using_ip(g3_hostname: str):
     g3_service = await G3ServiceDiscovery.request_service(g3_hostname)
@@ -28,7 +29,13 @@ async def connect():
         await g3.recorder.stop()
         print("Enregistrement terminéé ")
 
-       
+async def test_connect_with_hostname_using_zeroconf_and_ip(g3_hostname: str):
+    async with connect_to_glasses.with_hostname(
+        g3_hostname, using_zeroconf=True, using_ip=True
+    ) as g3:
+        serial = await g3.system.get_recording_unit_serial()
+        print(f"Connecté à : {serial} ")
+   
        
 async def test_connect_with_urls(g3_hostname: str):
     async with connect_to_glasses.with_url(
@@ -37,9 +44,16 @@ async def test_connect_with_urls(g3_hostname: str):
         f"http://{g3_hostname}:{DEFAULT_HTTP_PORT}",
     ) as g3:
         serial = await g3.system.get_recording_unit_serial()
-        assert type(serial) is str    
+        assert type(serial) is str  
+
+async def test_connect_with_hostname_using_zeroconf_and_hostname(g3_hostname: str):
+    async with connect_to_glasses.with_hostname(
+        g3_hostname, using_zeroconf=True, using_ip=False
+    ) as g3:
+        serial = await g3.system.get_recording_unit_serial()
+        assert type(serial) is str
 
 async def main():
-    await test_connect_with_urls(G3_HOSTNAME)
+    await test_connect_with_hostname_using_zeroconf_and_hostname(G3_HOSTNAME)
 
 asyncio.run(main())
