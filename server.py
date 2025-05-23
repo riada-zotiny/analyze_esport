@@ -15,7 +15,7 @@ async def connect():
         await g3.recorder.start()
         print("Enregistrement a comméncé !")
 
-        await asyncio.sleep(10)
+        await asyncio.sleep()
 
         await g3.recorder.stop()
         print("Enregistrement terminéé ")
@@ -25,7 +25,7 @@ async def main():
     await connect()
 
 
-     
+
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
@@ -37,7 +37,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         data = conn.recv(1024).decode()
         if data == "LANCER":
             print("[Signal reçu] Lancement du programme...")
-            # Remplace 'notepad.exe' par le programme que tu veux lancer
+            conn.sendall(b"OK")
             asyncio.run(main())   
         else:
             print("[Signal invalide]")
