@@ -26,30 +26,32 @@ def should_stop():
 
 recorded_filename = {"name": None}
 
+# ...existing code...
+
 def start_record():
     global record_thread
     recording_flag["stop"] = False
 
-
-    # Demander le nom du fichier à l'utilisateur
     user_filename = simpledialog.askstring("Nom du fichier", "Entrez le nom du fichier (sans extension) :")
     if not user_filename:
         messagebox.showwarning("Nom manquant", "Aucun nom de fichier fourni, enregistrement annulé.")
         return
 
-    # Ajouter la date/heure au nom
     now = datetime.datetime.now()
     date_str = now.strftime("%Y-%m-%d_%H-%M-%S")
     final_filename = f"{user_filename}_{date_str}.json"
     recorded_filename["name"] = final_filename
-    try:
-        send_signal("LANCER")
-    except ImportError as ie:
-        messagebox.showerror("Erreur d'import", f"Impossible d'importer send_signal : {ie}")
-        return
-    except Exception as e:
-        messagebox.showerror("Erreur réseau", f"Impossible d'envoyer le signal : {e}")
-        return
+
+    send = messagebox.askyesno("Envoyer un signal", "Voulez-vous envoyer un signal au Tobii avant d'enregistrer ?")
+    if send:
+        try:
+            send_signal("LANCER")
+        except ImportError as ie:
+            messagebox.showerror("Erreur d'import", f"Impossible d'importer send_signal : {ie}")
+            return
+        except Exception as e:
+            messagebox.showerror("Erreur réseau", f"Impossible d'envoyer le signal : {e}")
+            return
 
     def run_record():
         filename = record(should_stop_callback=should_stop)
@@ -61,17 +63,20 @@ def start_record():
 
 def stop_record():
     recording_flag["stop"] = True
-    try:
-        send_signal("STOP")
-    except ImportError as ie:
-        messagebox.showerror("Erreur d'import", f"Impossible d'importer send_signal : {ie}")
-        return
-    except Exception as e:
-        messagebox.showerror("Erreur réseau", f"Impossible d'envoyer le signal d'arrêt : {e}")
-        return
+
+    send = messagebox.askyesno("Envoyer un signal", "Voulez-vous envoyer un signal d'arrêt au Tobii ?")
+    if send:
+        try:
+            send_signal("STOP")
+        except ImportError as ie:
+            messagebox.showerror("Erreur d'import", f"Impossible d'importer send_signal : {ie}")
+            return
+        except Exception as e:
+            messagebox.showerror("Erreur réseau", f"Impossible d'envoyer le signal d'arrêt : {e}")
+            return
 
     if recorded_filename["name"]:
-        # Extraire la date du nom de fichier
+
         try:
             date_part = recorded_filename["name"].rsplit("_", 1)[1].replace(".json", "")
             messagebox.showinfo("Enregistrement terminé", f"Fichier enregistré : {recorded_filename['name']}\nDate : {date_part}")
@@ -79,6 +84,8 @@ def stop_record():
             messagebox.showinfo("Enregistrement terminé", f"Fichier enregistré : {recorded_filename['name']}")
     else:
         messagebox.showwarning("Enregistrement", "Aucun fichier n'a été enregistré.")
+
+
         
 def start_replay():
     file_path = filedialog.askopenfilename(
