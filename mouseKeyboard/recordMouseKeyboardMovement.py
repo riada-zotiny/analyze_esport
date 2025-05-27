@@ -50,7 +50,7 @@ def get_next_filename(base_dir="dataMouseKeybord", base_name="mouse_keyboard_act
             return filename
         i += 1
 
-def record(should_stop_callback=lambda: False):
+def record(filename=None,should_stop_callback=lambda: False):
     count_down_animation_config("record")
     print("Recording started. Move the mouse around, perform actions, and type on the keyboard.")
 
@@ -102,8 +102,11 @@ def record(should_stop_callback=lambda: False):
     listener.start()
     keyboard.hook(on_key_event)
 
-    filename = get_next_filename()
+    
+    if filename is None:
+        filename = get_next_filename()
     path = os.path.join("dataMouseKeybord", filename)
+
 
     try:
         while not should_stop_callback():

@@ -1,0 +1,2524 @@
+[
+  {
+    "action": "move",
+    "position": [
+      946,
+      631
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.813934"
+  },
+  {
+    "action": "move",
+    "position": [
+      942,
+      633
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.820215"
+  },
+  {
+    "action": "move",
+    "position": [
+      936,
+      633
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.826218"
+  },
+  {
+    "action": "move",
+    "position": [
+      930,
+      634
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.831865"
+  },
+  {
+    "action": "move",
+    "position": [
+      923,
+      635
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.837726"
+  },
+  {
+    "action": "move",
+    "position": [
+      913,
+      635
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.843142"
+  },
+  {
+    "action": "move",
+    "position": [
+      900,
+      635
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.849312"
+  },
+  {
+    "action": "move",
+    "position": [
+      881,
+      632
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.858511"
+  },
+  {
+    "action": "move",
+    "position": [
+      856,
+      623
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.867516"
+  },
+  {
+    "action": "move",
+    "position": [
+      827,
+      607
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.871529"
+  },
+  {
+    "action": "move",
+    "position": [
+      796,
+      587
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.878574"
+  },
+  {
+    "action": "move",
+    "position": [
+      767,
+      562
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.883685"
+  },
+  {
+    "action": "move",
+    "position": [
+      738,
+      536
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.888720"
+  },
+  {
+    "action": "move",
+    "position": [
+      706,
+      508
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.896830"
+  },
+  {
+    "action": "move",
+    "position": [
+      672,
+      466
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.902839"
+  },
+  {
+    "action": "move",
+    "position": [
+      647,
+      423
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.908909"
+  },
+  {
+    "action": "move",
+    "position": [
+      626,
+      377
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.915160"
+  },
+  {
+    "action": "move",
+    "position": [
+      612,
+      342
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.921437"
+  },
+  {
+    "action": "move",
+    "position": [
+      596,
+      300
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.927437"
+  },
+  {
+    "action": "move",
+    "position": [
+      586,
+      260
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.933901"
+  },
+  {
+    "action": "move",
+    "position": [
+      581,
+      221
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.941106"
+  },
+  {
+    "action": "move",
+    "position": [
+      580,
+      193
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.947414"
+  },
+  {
+    "action": "move",
+    "position": [
+      580,
+      168
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.954291"
+  },
+  {
+    "action": "move",
+    "position": [
+      584,
+      146
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.960293"
+  },
+  {
+    "action": "move",
+    "position": [
+      592,
+      121
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.967041"
+  },
+  {
+    "action": "move",
+    "position": [
+      602,
+      107
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.974460"
+  },
+  {
+    "action": "move",
+    "position": [
+      612,
+      96
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.979467"
+  },
+  {
+    "action": "move",
+    "position": [
+      627,
+      83
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.986823"
+  },
+  {
+    "action": "move",
+    "position": [
+      643,
+      72
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.992893"
+  },
+  {
+    "action": "move",
+    "position": [
+      669,
+      61
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:27.998931"
+  },
+  {
+    "action": "move",
+    "position": [
+      698,
+      58
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.005885"
+  },
+  {
+    "action": "move",
+    "position": [
+      728,
+      58
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.011897"
+  },
+  {
+    "action": "move",
+    "position": [
+      757,
+      60
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.018547"
+  },
+  {
+    "action": "move",
+    "position": [
+      800,
+      67
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.024474"
+  },
+  {
+    "action": "move",
+    "position": [
+      844,
+      78
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.032447"
+  },
+  {
+    "action": "move",
+    "position": [
+      891,
+      91
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.039082"
+  },
+  {
+    "action": "move",
+    "position": [
+      947,
+      115
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.045085"
+  },
+  {
+    "action": "move",
+    "position": [
+      997,
+      146
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.052531"
+  },
+  {
+    "action": "move",
+    "position": [
+      1048,
+      180
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.058426"
+  },
+  {
+    "action": "move",
+    "position": [
+      1089,
+      210
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.064434"
+  },
+  {
+    "action": "move",
+    "position": [
+      1129,
+      237
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.071243"
+  },
+  {
+    "action": "move",
+    "position": [
+      1167,
+      261
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.077247"
+  },
+  {
+    "action": "move",
+    "position": [
+      1197,
+      281
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.084721"
+  },
+  {
+    "action": "move",
+    "position": [
+      1222,
+      300
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.090425"
+  },
+  {
+    "action": "move",
+    "position": [
+      1246,
+      319
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.097712"
+  },
+  {
+    "action": "move",
+    "position": [
+      1274,
+      339
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.104714"
+  },
+  {
+    "action": "move",
+    "position": [
+      1298,
+      356
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.109811"
+  },
+  {
+    "action": "move",
+    "position": [
+      1320,
+      364
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.116337"
+  },
+  {
+    "action": "move",
+    "position": [
+      1333,
+      371
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.123446"
+  },
+  {
+    "action": "move",
+    "position": [
+      1344,
+      373
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.129464"
+  },
+  {
+    "action": "move",
+    "position": [
+      1351,
+      375
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.136649"
+  },
+  {
+    "action": "move",
+    "position": [
+      1356,
+      376
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.142846"
+  },
+  {
+    "action": "move",
+    "position": [
+      1365,
+      377
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.149198"
+  },
+  {
+    "action": "move",
+    "position": [
+      1373,
+      377
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.156092"
+  },
+  {
+    "action": "move",
+    "position": [
+      1382,
+      375
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.162569"
+  },
+  {
+    "action": "move",
+    "position": [
+      1391,
+      373
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.168808"
+  },
+  {
+    "action": "move",
+    "position": [
+      1398,
+      368
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.175248"
+  },
+  {
+    "action": "move",
+    "position": [
+      1404,
+      362
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.182184"
+  },
+  {
+    "action": "move",
+    "position": [
+      1410,
+      350
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.188240"
+  },
+  {
+    "action": "move",
+    "position": [
+      1414,
+      337
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.195270"
+  },
+  {
+    "action": "move",
+    "position": [
+      1415,
+      322
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.201420"
+  },
+  {
+    "action": "move",
+    "position": [
+      1415,
+      306
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.207890"
+  },
+  {
+    "action": "move",
+    "position": [
+      1413,
+      289
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.214355"
+  },
+  {
+    "action": "move",
+    "position": [
+      1409,
+      268
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.226954"
+  },
+  {
+    "action": "move",
+    "position": [
+      1397,
+      239
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.227849"
+  },
+  {
+    "action": "move",
+    "position": [
+      1387,
+      217
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.234312"
+  },
+  {
+    "action": "move",
+    "position": [
+      1377,
+      203
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.241111"
+  },
+  {
+    "action": "move",
+    "position": [
+      1366,
+      193
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.247878"
+  },
+  {
+    "action": "move",
+    "position": [
+      1357,
+      187
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.253896"
+  },
+  {
+    "action": "move",
+    "position": [
+      1348,
+      182
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.260892"
+  },
+  {
+    "action": "move",
+    "position": [
+      1343,
+      179
+    ],
+    "time_diff": 0,
+    "timestamp": "2025-05-27T14:18:28.272446"
+  },
+  {
+    "action": "move",
+    "position": [
+      1337,
+      178
+    ],
+    "time_diff": 0.4680054187774658,
+    "timestamp": "2025-05-27T14:18:28.273349"
+  },
+  {
+    "action": "move",
+    "position": [
+      1328,
+      178
+    ],
+    "time_diff": 0.4680054187774658,
+    "timestamp": "2025-05-27T14:18:28.280175"
+  },
+  {
+    "action": "move",
+    "position": [
+      1315,
+      181
+    ],
+    "time_diff": 0.4680054187774658,
+    "timestamp": "2025-05-27T14:18:28.286425"
+  },
+  {
+    "action": "move",
+    "position": [
+      1300,
+      185
+    ],
+    "time_diff": 0.4680054187774658,
+    "timestamp": "2025-05-27T14:18:28.292983"
+  },
+  {
+    "action": "move",
+    "position": [
+      1280,
+      193
+    ],
+    "time_diff": 0.4680054187774658,
+    "timestamp": "2025-05-27T14:18:28.299037"
+  },
+  {
+    "action": "move",
+    "position": [
+      1258,
+      209
+    ],
+    "time_diff": 0.4680054187774658,
+    "timestamp": "2025-05-27T14:18:28.305583"
+  },
+  {
+    "action": "move",
+    "position": [
+      1237,
+      234
+    ],
+    "time_diff": 0.4680054187774658,
+    "timestamp": "2025-05-27T14:18:28.312865"
+  },
+  {
+    "action": "move",
+    "position": [
+      1218,
+      262
+    ],
+    "time_diff": 0.4680054187774658,
+    "timestamp": "2025-05-27T14:18:28.318923"
+  },
+  {
+    "action": "move",
+    "position": [
+      1200,
+      289
+    ],
+    "time_diff": 0.050730228424072266,
+    "timestamp": "2025-05-27T14:18:28.325950"
+  },
+  {
+    "action": "move",
+    "position": [
+      1182,
+      322
+    ],
+    "time_diff": 0.050730228424072266,
+    "timestamp": "2025-05-27T14:18:28.332318"
+  },
+  {
+    "action": "move",
+    "position": [
+      1164,
+      361
+    ],
+    "time_diff": 0.050730228424072266,
+    "timestamp": "2025-05-27T14:18:28.338467"
+  },
+  {
+    "action": "move",
+    "position": [
+      1146,
+      409
+    ],
+    "time_diff": 0.050730228424072266,
+    "timestamp": "2025-05-27T14:18:28.344768"
+  },
+  {
+    "action": "move",
+    "position": [
+      1126,
+      451
+    ],
+    "time_diff": 0.050730228424072266,
+    "timestamp": "2025-05-27T14:18:28.351856"
+  },
+  {
+    "action": "move",
+    "position": [
+      1111,
+      487
+    ],
+    "time_diff": 0.050730228424072266,
+    "timestamp": "2025-05-27T14:18:28.358583"
+  },
+  {
+    "action": "move",
+    "position": [
+      1097,
+      522
+    ],
+    "time_diff": 0.050730228424072266,
+    "timestamp": "2025-05-27T14:18:28.364910"
+  },
+  {
+    "action": "move",
+    "position": [
+      1082,
+      557
+    ],
+    "time_diff": 0.050730228424072266,
+    "timestamp": "2025-05-27T14:18:28.371993"
+  },
+  {
+    "action": "move",
+    "position": [
+      1064,
+      590
+    ],
+    "time_diff": 0.05088019371032715,
+    "timestamp": "2025-05-27T14:18:28.378094"
+  },
+  {
+    "action": "move",
+    "position": [
+      1048,
+      611
+    ],
+    "time_diff": 0.05088019371032715,
+    "timestamp": "2025-05-27T14:18:28.383990"
+  },
+  {
+    "action": "move",
+    "position": [
+      1030,
+      633
+    ],
+    "time_diff": 0.05088019371032715,
+    "timestamp": "2025-05-27T14:18:28.390991"
+  },
+  {
+    "action": "move",
+    "position": [
+      1007,
+      653
+    ],
+    "time_diff": 0.05088019371032715,
+    "timestamp": "2025-05-27T14:18:28.401838"
+  },
+  {
+    "action": "move",
+    "position": [
+      982,
+      675
+    ],
+    "time_diff": 0.05088019371032715,
+    "timestamp": "2025-05-27T14:18:28.404839"
+  },
+  {
+    "action": "move",
+    "position": [
+      958,
+      691
+    ],
+    "time_diff": 0.05088019371032715,
+    "timestamp": "2025-05-27T14:18:28.410673"
+  },
+  {
+    "action": "move",
+    "position": [
+      940,
+      699
+    ],
+    "time_diff": 0.05088019371032715,
+    "timestamp": "2025-05-27T14:18:28.416678"
+  },
+  {
+    "action": "move",
+    "position": [
+      923,
+      703
+    ],
+    "time_diff": 0.05088019371032715,
+    "timestamp": "2025-05-27T14:18:28.423547"
+  },
+  {
+    "action": "move",
+    "position": [
+      906,
+      706
+    ],
+    "time_diff": 0.05058002471923828,
+    "timestamp": "2025-05-27T14:18:28.431479"
+  },
+  {
+    "action": "move",
+    "position": [
+      886,
+      705
+    ],
+    "time_diff": 0.05058002471923828,
+    "timestamp": "2025-05-27T14:18:28.437808"
+  },
+  {
+    "action": "move",
+    "position": [
+      856,
+      700
+    ],
+    "time_diff": 0.05058002471923828,
+    "timestamp": "2025-05-27T14:18:28.443850"
+  },
+  {
+    "action": "move",
+    "position": [
+      822,
+      690
+    ],
+    "time_diff": 0.05058002471923828,
+    "timestamp": "2025-05-27T14:18:28.449822"
+  },
+  {
+    "action": "move",
+    "position": [
+      785,
+      668
+    ],
+    "time_diff": 0.05058002471923828,
+    "timestamp": "2025-05-27T14:18:28.456174"
+  },
+  {
+    "action": "move",
+    "position": [
+      748,
+      644
+    ],
+    "time_diff": 0.05058002471923828,
+    "timestamp": "2025-05-27T14:18:28.462964"
+  },
+  {
+    "action": "move",
+    "position": [
+      716,
+      617
+    ],
+    "time_diff": 0.05058002471923828,
+    "timestamp": "2025-05-27T14:18:28.469968"
+  },
+  {
+    "action": "move",
+    "position": [
+      689,
+      588
+    ],
+    "time_diff": 0.05058002471923828,
+    "timestamp": "2025-05-27T14:18:28.476202"
+  },
+  {
+    "action": "move",
+    "position": [
+      693,
+      574
+    ],
+    "time_diff": 0.05066323280334473,
+    "timestamp": "2025-05-27T14:18:28.482308"
+  },
+  {
+    "action": "move",
+    "position": [
+      670,
+      521
+    ],
+    "time_diff": 0.05066323280334473,
+    "timestamp": "2025-05-27T14:18:28.488928"
+  },
+  {
+    "action": "move",
+    "position": [
+      650,
+      463
+    ],
+    "time_diff": 0.05066323280334473,
+    "timestamp": "2025-05-27T14:18:28.495499"
+  },
+  {
+    "action": "move",
+    "position": [
+      636,
+      409
+    ],
+    "time_diff": 0.05066323280334473,
+    "timestamp": "2025-05-27T14:18:28.502514"
+  },
+  {
+    "action": "move",
+    "position": [
+      632,
+      364
+    ],
+    "time_diff": 0.05066323280334473,
+    "timestamp": "2025-05-27T14:18:28.509128"
+  },
+  {
+    "action": "move",
+    "position": [
+      630,
+      323
+    ],
+    "time_diff": 0.05066323280334473,
+    "timestamp": "2025-05-27T14:18:28.515137"
+  },
+  {
+    "action": "move",
+    "position": [
+      633,
+      284
+    ],
+    "time_diff": 0.05066323280334473,
+    "timestamp": "2025-05-27T14:18:28.522138"
+  },
+  {
+    "action": "move",
+    "position": [
+      639,
+      245
+    ],
+    "time_diff": 0.05053281784057617,
+    "timestamp": "2025-05-27T14:18:28.528053"
+  },
+  {
+    "action": "move",
+    "position": [
+      649,
+      210
+    ],
+    "time_diff": 0.05053281784057617,
+    "timestamp": "2025-05-27T14:18:28.534756"
+  },
+  {
+    "action": "move",
+    "position": [
+      659,
+      191
+    ],
+    "time_diff": 0.05053281784057617,
+    "timestamp": "2025-05-27T14:18:28.541542"
+  },
+  {
+    "action": "move",
+    "position": [
+      670,
+      182
+    ],
+    "time_diff": 0.05053281784057617,
+    "timestamp": "2025-05-27T14:18:28.547468"
+  },
+  {
+    "action": "move",
+    "position": [
+      679,
+      178
+    ],
+    "time_diff": 0.05053281784057617,
+    "timestamp": "2025-05-27T14:18:28.557464"
+  },
+  {
+    "action": "move",
+    "position": [
+      690,
+      178
+    ],
+    "time_diff": 0.05053281784057617,
+    "timestamp": "2025-05-27T14:18:28.560581"
+  },
+  {
+    "action": "move",
+    "position": [
+      707,
+      180
+    ],
+    "time_diff": 0.05053281784057617,
+    "timestamp": "2025-05-27T14:18:28.567232"
+  },
+  {
+    "action": "move",
+    "position": [
+      736,
+      187
+    ],
+    "time_diff": 0.05053281784057617,
+    "timestamp": "2025-05-27T14:18:28.573896"
+  },
+  {
+    "action": "move",
+    "position": [
+      778,
+      202
+    ],
+    "time_diff": 0.050168752670288086,
+    "timestamp": "2025-05-27T14:18:28.581004"
+  },
+  {
+    "action": "move",
+    "position": [
+      830,
+      226
+    ],
+    "time_diff": 0.050168752670288086,
+    "timestamp": "2025-05-27T14:18:28.587027"
+  },
+  {
+    "action": "move",
+    "position": [
+      883,
+      252
+    ],
+    "time_diff": 0.050168752670288086,
+    "timestamp": "2025-05-27T14:18:28.593490"
+  },
+  {
+    "action": "move",
+    "position": [
+      939,
+      281
+    ],
+    "time_diff": 0.050168752670288086,
+    "timestamp": "2025-05-27T14:18:28.599490"
+  },
+  {
+    "action": "move",
+    "position": [
+      989,
+      307
+    ],
+    "time_diff": 0.050168752670288086,
+    "timestamp": "2025-05-27T14:18:28.606381"
+  },
+  {
+    "action": "move",
+    "position": [
+      1040,
+      326
+    ],
+    "time_diff": 0.050168752670288086,
+    "timestamp": "2025-05-27T14:18:28.612718"
+  },
+  {
+    "action": "move",
+    "position": [
+      1093,
+      350
+    ],
+    "time_diff": 0.050168752670288086,
+    "timestamp": "2025-05-27T14:18:28.619719"
+  },
+  {
+    "action": "move",
+    "position": [
+      1148,
+      372
+    ],
+    "time_diff": 0.050168752670288086,
+    "timestamp": "2025-05-27T14:18:28.625718"
+  },
+  {
+    "action": "move",
+    "position": [
+      1203,
+      393
+    ],
+    "time_diff": 0.0503382682800293,
+    "timestamp": "2025-05-27T14:18:28.632263"
+  },
+  {
+    "action": "move",
+    "position": [
+      1255,
+      412
+    ],
+    "time_diff": 0.0503382682800293,
+    "timestamp": "2025-05-27T14:18:28.639483"
+  },
+  {
+    "action": "move",
+    "position": [
+      1302,
+      425
+    ],
+    "time_diff": 0.0503382682800293,
+    "timestamp": "2025-05-27T14:18:28.645597"
+  },
+  {
+    "action": "move",
+    "position": [
+      1339,
+      434
+    ],
+    "time_diff": 0.0503382682800293,
+    "timestamp": "2025-05-27T14:18:28.652486"
+  },
+  {
+    "action": "move",
+    "position": [
+      1372,
+      439
+    ],
+    "time_diff": 0.0503382682800293,
+    "timestamp": "2025-05-27T14:18:28.658844"
+  },
+  {
+    "action": "move",
+    "position": [
+      1397,
+      443
+    ],
+    "time_diff": 0.0503382682800293,
+    "timestamp": "2025-05-27T14:18:28.665022"
+  },
+  {
+    "action": "move",
+    "position": [
+      1422,
+      444
+    ],
+    "time_diff": 0.0503382682800293,
+    "timestamp": "2025-05-27T14:18:28.671477"
+  },
+  {
+    "action": "move",
+    "position": [
+      1441,
+      442
+    ],
+    "time_diff": 0.05022835731506348,
+    "timestamp": "2025-05-27T14:18:28.677981"
+  },
+  {
+    "action": "move",
+    "position": [
+      1458,
+      438
+    ],
+    "time_diff": 0.05022835731506348,
+    "timestamp": "2025-05-27T14:18:28.684996"
+  },
+  {
+    "action": "move",
+    "position": [
+      1474,
+      431
+    ],
+    "time_diff": 0.05022835731506348,
+    "timestamp": "2025-05-27T14:18:28.691510"
+  },
+  {
+    "action": "move",
+    "position": [
+      1488,
+      421
+    ],
+    "time_diff": 0.05022835731506348,
+    "timestamp": "2025-05-27T14:18:28.697935"
+  },
+  {
+    "action": "move",
+    "position": [
+      1500,
+      412
+    ],
+    "time_diff": 0.05022835731506348,
+    "timestamp": "2025-05-27T14:18:28.703990"
+  },
+  {
+    "action": "move",
+    "position": [
+      1508,
+      401
+    ],
+    "time_diff": 0.05022835731506348,
+    "timestamp": "2025-05-27T14:18:28.710954"
+  },
+  {
+    "action": "move",
+    "position": [
+      1514,
+      389
+    ],
+    "time_diff": 0.05022835731506348,
+    "timestamp": "2025-05-27T14:18:28.717517"
+  },
+  {
+    "action": "move",
+    "position": [
+      1518,
+      373
+    ],
+    "time_diff": 0.05022835731506348,
+    "timestamp": "2025-05-27T14:18:28.724090"
+  },
+  {
+    "action": "move",
+    "position": [
+      1520,
+      345
+    ],
+    "time_diff": 0.050771236419677734,
+    "timestamp": "2025-05-27T14:18:28.730686"
+  },
+  {
+    "action": "move",
+    "position": [
+      1515,
+      309
+    ],
+    "time_diff": 0.050771236419677734,
+    "timestamp": "2025-05-27T14:18:28.737692"
+  },
+  {
+    "action": "move",
+    "position": [
+      1502,
+      268
+    ],
+    "time_diff": 0.050771236419677734,
+    "timestamp": "2025-05-27T14:18:28.743832"
+  },
+  {
+    "action": "move",
+    "position": [
+      1486,
+      239
+    ],
+    "time_diff": 0.050771236419677734,
+    "timestamp": "2025-05-27T14:18:28.750210"
+  },
+  {
+    "action": "move",
+    "position": [
+      1470,
+      218
+    ],
+    "time_diff": 0.050771236419677734,
+    "timestamp": "2025-05-27T14:18:28.757194"
+  },
+  {
+    "action": "move",
+    "position": [
+      1455,
+      199
+    ],
+    "time_diff": 0.050771236419677734,
+    "timestamp": "2025-05-27T14:18:28.763184"
+  },
+  {
+    "action": "move",
+    "position": [
+      1442,
+      182
+    ],
+    "time_diff": 0.050771236419677734,
+    "timestamp": "2025-05-27T14:18:28.769992"
+  },
+  {
+    "action": "move",
+    "position": [
+      1433,
+      169
+    ],
+    "time_diff": 0.050771236419677734,
+    "timestamp": "2025-05-27T14:18:28.776012"
+  },
+  {
+    "action": "move",
+    "position": [
+      1422,
+      158
+    ],
+    "time_diff": 0.05082130432128906,
+    "timestamp": "2025-05-27T14:18:28.783488"
+  },
+  {
+    "action": "move",
+    "position": [
+      1411,
+      152
+    ],
+    "time_diff": 0.05082130432128906,
+    "timestamp": "2025-05-27T14:18:28.789485"
+  },
+  {
+    "action": "move",
+    "position": [
+      1399,
+      149
+    ],
+    "time_diff": 0.05082130432128906,
+    "timestamp": "2025-05-27T14:18:28.795973"
+  },
+  {
+    "action": "move",
+    "position": [
+      1389,
+      149
+    ],
+    "time_diff": 0.05082130432128906,
+    "timestamp": "2025-05-27T14:18:28.803973"
+  },
+  {
+    "action": "move",
+    "position": [
+      1377,
+      149
+    ],
+    "time_diff": 0.05082130432128906,
+    "timestamp": "2025-05-27T14:18:28.808976"
+  },
+  {
+    "action": "move",
+    "position": [
+      1365,
+      155
+    ],
+    "time_diff": 0.05082130432128906,
+    "timestamp": "2025-05-27T14:18:28.815736"
+  },
+  {
+    "action": "move",
+    "position": [
+      1351,
+      164
+    ],
+    "time_diff": 0.05082130432128906,
+    "timestamp": "2025-05-27T14:18:28.822247"
+  },
+  {
+    "action": "move",
+    "position": [
+      1331,
+      181
+    ],
+    "time_diff": 0.05082130432128906,
+    "timestamp": "2025-05-27T14:18:28.829254"
+  },
+  {
+    "action": "move",
+    "position": [
+      1330,
+      182
+    ],
+    "time_diff": 0.05019092559814453,
+    "timestamp": "2025-05-27T14:18:28.835672"
+  },
+  {
+    "action": "move",
+    "position": [
+      1308,
+      200
+    ],
+    "time_diff": 0.05019092559814453,
+    "timestamp": "2025-05-27T14:18:28.841951"
+  },
+  {
+    "action": "move",
+    "position": [
+      1280,
+      222
+    ],
+    "time_diff": 0.05019092559814453,
+    "timestamp": "2025-05-27T14:18:28.847974"
+  },
+  {
+    "action": "move",
+    "position": [
+      1249,
+      245
+    ],
+    "time_diff": 0.05019092559814453,
+    "timestamp": "2025-05-27T14:18:28.855138"
+  },
+  {
+    "action": "move",
+    "position": [
+      1216,
+      277
+    ],
+    "time_diff": 0.05019092559814453,
+    "timestamp": "2025-05-27T14:18:28.860850"
+  },
+  {
+    "action": "move",
+    "position": [
+      1183,
+      310
+    ],
+    "time_diff": 0.05019092559814453,
+    "timestamp": "2025-05-27T14:18:28.868222"
+  },
+  {
+    "action": "move",
+    "position": [
+      1147,
+      344
+    ],
+    "time_diff": 0.05019092559814453,
+    "timestamp": "2025-05-27T14:18:28.874325"
+  },
+  {
+    "action": "move",
+    "position": [
+      1107,
+      368
+    ],
+    "time_diff": 0.05081892013549805,
+    "timestamp": "2025-05-27T14:18:28.882209"
+  },
+  {
+    "action": "move",
+    "position": [
+      1074,
+      389
+    ],
+    "time_diff": 0.05081892013549805,
+    "timestamp": "2025-05-27T14:18:28.888226"
+  },
+  {
+    "action": "move",
+    "position": [
+      1030,
+      414
+    ],
+    "time_diff": 0.05081892013549805,
+    "timestamp": "2025-05-27T14:18:28.894076"
+  },
+  {
+    "action": "move",
+    "position": [
+      983,
+      443
+    ],
+    "time_diff": 0.05081892013549805,
+    "timestamp": "2025-05-27T14:18:28.901080"
+  },
+  {
+    "action": "move",
+    "position": [
+      937,
+      468
+    ],
+    "time_diff": 0.05081892013549805,
+    "timestamp": "2025-05-27T14:18:28.906619"
+  },
+  {
+    "action": "move",
+    "position": [
+      895,
+      486
+    ],
+    "time_diff": 0.05081892013549805,
+    "timestamp": "2025-05-27T14:18:28.913626"
+  },
+  {
+    "action": "move",
+    "position": [
+      857,
+      501
+    ],
+    "time_diff": 0.05081892013549805,
+    "timestamp": "2025-05-27T14:18:28.919857"
+  },
+  {
+    "action": "move",
+    "position": [
+      817,
+      509
+    ],
+    "time_diff": 0.05081892013549805,
+    "timestamp": "2025-05-27T14:18:28.926765"
+  },
+  {
+    "action": "move",
+    "position": [
+      781,
+      513
+    ],
+    "time_diff": 0.05047011375427246,
+    "timestamp": "2025-05-27T14:18:28.932604"
+  },
+  {
+    "action": "move",
+    "position": [
+      753,
+      515
+    ],
+    "time_diff": 0.05047011375427246,
+    "timestamp": "2025-05-27T14:18:28.939940"
+  },
+  {
+    "action": "move",
+    "position": [
+      727,
+      512
+    ],
+    "time_diff": 0.05047011375427246,
+    "timestamp": "2025-05-27T14:18:28.946725"
+  },
+  {
+    "action": "move",
+    "position": [
+      707,
+      508
+    ],
+    "time_diff": 0.05047011375427246,
+    "timestamp": "2025-05-27T14:18:28.952778"
+  },
+  {
+    "action": "move",
+    "position": [
+      686,
+      500
+    ],
+    "time_diff": 0.05047011375427246,
+    "timestamp": "2025-05-27T14:18:28.959810"
+  },
+  {
+    "action": "move",
+    "position": [
+      669,
+      489
+    ],
+    "time_diff": 0.05047011375427246,
+    "timestamp": "2025-05-27T14:18:28.965798"
+  },
+  {
+    "action": "move",
+    "position": [
+      658,
+      478
+    ],
+    "time_diff": 0.05047011375427246,
+    "timestamp": "2025-05-27T14:18:28.972411"
+  },
+  {
+    "action": "move",
+    "position": [
+      650,
+      467
+    ],
+    "time_diff": 0.05047011375427246,
+    "timestamp": "2025-05-27T14:18:28.978427"
+  },
+  {
+    "action": "move",
+    "position": [
+      644,
+      456
+    ],
+    "time_diff": 0.050501346588134766,
+    "timestamp": "2025-05-27T14:18:28.985149"
+  },
+  {
+    "action": "move",
+    "position": [
+      642,
+      448
+    ],
+    "time_diff": 0.050501346588134766,
+    "timestamp": "2025-05-27T14:18:28.991731"
+  },
+  {
+    "action": "move",
+    "position": [
+      642,
+      436
+    ],
+    "time_diff": 0.050501346588134766,
+    "timestamp": "2025-05-27T14:18:28.998443"
+  },
+  {
+    "action": "move",
+    "position": [
+      645,
+      421
+    ],
+    "time_diff": 0.050501346588134766,
+    "timestamp": "2025-05-27T14:18:29.004825"
+  },
+  {
+    "action": "move",
+    "position": [
+      653,
+      396
+    ],
+    "time_diff": 0.050501346588134766,
+    "timestamp": "2025-05-27T14:18:29.011826"
+  },
+  {
+    "action": "move",
+    "position": [
+      667,
+      367
+    ],
+    "time_diff": 0.050501346588134766,
+    "timestamp": "2025-05-27T14:18:29.017932"
+  },
+  {
+    "action": "move",
+    "position": [
+      684,
+      340
+    ],
+    "time_diff": 0.050501346588134766,
+    "timestamp": "2025-05-27T14:18:29.023932"
+  },
+  {
+    "action": "move",
+    "position": [
+      703,
+      323
+    ],
+    "time_diff": 0.050501346588134766,
+    "timestamp": "2025-05-27T14:18:29.030042"
+  },
+  {
+    "action": "move",
+    "position": [
+      703,
+      330
+    ],
+    "time_diff": 0.050510406494140625,
+    "timestamp": "2025-05-27T14:18:29.037838"
+  },
+  {
+    "action": "move",
+    "position": [
+      725,
+      322
+    ],
+    "time_diff": 0.050510406494140625,
+    "timestamp": "2025-05-27T14:18:29.044250"
+  },
+  {
+    "action": "move",
+    "position": [
+      751,
+      316
+    ],
+    "time_diff": 0.050510406494140625,
+    "timestamp": "2025-05-27T14:18:29.050565"
+  },
+  {
+    "action": "move",
+    "position": [
+      789,
+      316
+    ],
+    "time_diff": 0.050510406494140625,
+    "timestamp": "2025-05-27T14:18:29.057668"
+  },
+  {
+    "action": "move",
+    "position": [
+      833,
+      318
+    ],
+    "time_diff": 0.050510406494140625,
+    "timestamp": "2025-05-27T14:18:29.063745"
+  },
+  {
+    "action": "move",
+    "position": [
+      887,
+      329
+    ],
+    "time_diff": 0.050510406494140625,
+    "timestamp": "2025-05-27T14:18:29.070283"
+  },
+  {
+    "action": "move",
+    "position": [
+      938,
+      345
+    ],
+    "time_diff": 0.050510406494140625,
+    "timestamp": "2025-05-27T14:18:29.076589"
+  },
+  {
+    "action": "move",
+    "position": [
+      990,
+      367
+    ],
+    "time_diff": 0.05068373680114746,
+    "timestamp": "2025-05-27T14:18:29.083253"
+  },
+  {
+    "action": "move",
+    "position": [
+      1036,
+      392
+    ],
+    "time_diff": 0.05068373680114746,
+    "timestamp": "2025-05-27T14:18:29.090257"
+  },
+  {
+    "action": "move",
+    "position": [
+      1080,
+      423
+    ],
+    "time_diff": 0.05068373680114746,
+    "timestamp": "2025-05-27T14:18:29.096153"
+  },
+  {
+    "action": "move",
+    "position": [
+      1118,
+      447
+    ],
+    "time_diff": 0.05068373680114746,
+    "timestamp": "2025-05-27T14:18:29.102289"
+  },
+  {
+    "action": "move",
+    "position": [
+      1145,
+      466
+    ],
+    "time_diff": 0.05068373680114746,
+    "timestamp": "2025-05-27T14:18:29.109327"
+  },
+  {
+    "action": "move",
+    "position": [
+      1163,
+      481
+    ],
+    "time_diff": 0.05068373680114746,
+    "timestamp": "2025-05-27T14:18:29.115927"
+  },
+  {
+    "action": "move",
+    "position": [
+      1173,
+      488
+    ],
+    "time_diff": 0.05068373680114746,
+    "timestamp": "2025-05-27T14:18:29.122576"
+  },
+  {
+    "action": "move",
+    "position": [
+      1177,
+      492
+    ],
+    "time_diff": 0.05068373680114746,
+    "timestamp": "2025-05-27T14:18:29.129155"
+  },
+  {
+    "action": "move",
+    "position": [
+      1177,
+      495
+    ],
+    "time_diff": 0.05098390579223633,
+    "timestamp": "2025-05-27T14:18:29.134809"
+  },
+  {
+    "action": "move",
+    "position": [
+      1177,
+      496
+    ],
+    "time_diff": 0.05098390579223633,
+    "timestamp": "2025-05-27T14:18:29.141904"
+  },
+  {
+    "action": "move",
+    "position": [
+      1177,
+      496
+    ],
+    "time_diff": 0.05098390579223633,
+    "timestamp": "2025-05-27T14:18:29.148843"
+  },
+  {
+    "action": "move",
+    "position": [
+      1177,
+      497
+    ],
+    "time_diff": 0.05098390579223633,
+    "timestamp": "2025-05-27T14:18:29.155169"
+  },
+  {
+    "action": "move",
+    "position": [
+      1173,
+      499
+    ],
+    "time_diff": 0.05098390579223633,
+    "timestamp": "2025-05-27T14:18:29.161547"
+  },
+  {
+    "action": "move",
+    "position": [
+      1166,
+      502
+    ],
+    "time_diff": 0.05098390579223633,
+    "timestamp": "2025-05-27T14:18:29.167615"
+  },
+  {
+    "action": "move",
+    "position": [
+      1152,
+      507
+    ],
+    "time_diff": 0.05098390579223633,
+    "timestamp": "2025-05-27T14:18:29.174687"
+  },
+  {
+    "action": "move",
+    "position": [
+      1138,
+      511
+    ],
+    "time_diff": 0.05098390579223633,
+    "timestamp": "2025-05-27T14:18:29.180280"
+  },
+  {
+    "action": "move",
+    "position": [
+      1120,
+      514
+    ],
+    "time_diff": 0.050733327865600586,
+    "timestamp": "2025-05-27T14:18:29.187568"
+  },
+  {
+    "action": "move",
+    "position": [
+      1101,
+      515
+    ],
+    "time_diff": 0.050733327865600586,
+    "timestamp": "2025-05-27T14:18:29.193367"
+  },
+  {
+    "action": "move",
+    "position": [
+      1079,
+      515
+    ],
+    "time_diff": 0.050733327865600586,
+    "timestamp": "2025-05-27T14:18:29.201101"
+  },
+  {
+    "action": "move",
+    "position": [
+      1048,
+      515
+    ],
+    "time_diff": 0.050733327865600586,
+    "timestamp": "2025-05-27T14:18:29.207143"
+  },
+  {
+    "action": "move",
+    "position": [
+      1013,
+      512
+    ],
+    "time_diff": 0.050733327865600586,
+    "timestamp": "2025-05-27T14:18:29.214098"
+  },
+  {
+    "action": "move",
+    "position": [
+      980,
+      506
+    ],
+    "time_diff": 0.050733327865600586,
+    "timestamp": "2025-05-27T14:18:29.220295"
+  },
+  {
+    "action": "move",
+    "position": [
+      949,
+      499
+    ],
+    "time_diff": 0.050733327865600586,
+    "timestamp": "2025-05-27T14:18:29.226996"
+  },
+  {
+    "action": "move",
+    "position": [
+      922,
+      489
+    ],
+    "time_diff": 0.050733327865600586,
+    "timestamp": "2025-05-27T14:18:29.233016"
+  },
+  {
+    "action": "move",
+    "position": [
+      901,
+      483
+    ],
+    "time_diff": 0.050685882568359375,
+    "timestamp": "2025-05-27T14:18:29.240153"
+  },
+  {
+    "action": "move",
+    "position": [
+      887,
+      478
+    ],
+    "time_diff": 0.050685882568359375,
+    "timestamp": "2025-05-27T14:18:29.246289"
+  },
+  {
+    "action": "move",
+    "position": [
+      878,
+      474
+    ],
+    "time_diff": 0.050685882568359375,
+    "timestamp": "2025-05-27T14:18:29.253170"
+  },
+  {
+    "action": "move",
+    "position": [
+      872,
+      470
+    ],
+    "time_diff": 0.050685882568359375,
+    "timestamp": "2025-05-27T14:18:29.259192"
+  },
+  {
+    "action": "move",
+    "position": [
+      849,
+      469
+    ],
+    "time_diff": 0.050644874572753906,
+    "timestamp": "2025-05-27T14:18:29.435877"
+  },
+  {
+    "action": "move",
+    "position": [
+      820,
+      465
+    ],
+    "time_diff": 0.05089974403381348,
+    "timestamp": "2025-05-27T14:18:29.442029"
+  },
+  {
+    "action": "move",
+    "position": [
+      785,
+      461
+    ],
+    "time_diff": 0.05089974403381348,
+    "timestamp": "2025-05-27T14:18:29.448853"
+  },
+  {
+    "action": "move",
+    "position": [
+      742,
+      452
+    ],
+    "time_diff": 0.05089974403381348,
+    "timestamp": "2025-05-27T14:18:29.454899"
+  },
+  {
+    "action": "move",
+    "position": [
+      692,
+      443
+    ],
+    "time_diff": 0.05089974403381348,
+    "timestamp": "2025-05-27T14:18:29.462200"
+  },
+  {
+    "action": "move",
+    "position": [
+      645,
+      432
+    ],
+    "time_diff": 0.05089974403381348,
+    "timestamp": "2025-05-27T14:18:29.468241"
+  },
+  {
+    "action": "move",
+    "position": [
+      597,
+      414
+    ],
+    "time_diff": 0.05089974403381348,
+    "timestamp": "2025-05-27T14:18:29.474931"
+  },
+  {
+    "action": "move",
+    "position": [
+      548,
+      395
+    ],
+    "time_diff": 0.05089974403381348,
+    "timestamp": "2025-05-27T14:18:29.481671"
+  },
+  {
+    "action": "move",
+    "position": [
+      503,
+      377
+    ],
+    "time_diff": 0.050287485122680664,
+    "timestamp": "2025-05-27T14:18:29.487693"
+  },
+  {
+    "action": "move",
+    "position": [
+      467,
+      358
+    ],
+    "time_diff": 0.050287485122680664,
+    "timestamp": "2025-05-27T14:18:29.494579"
+  },
+  {
+    "action": "move",
+    "position": [
+      440,
+      343
+    ],
+    "time_diff": 0.050287485122680664,
+    "timestamp": "2025-05-27T14:18:29.502192"
+  },
+  {
+    "action": "move",
+    "position": [
+      419,
+      335
+    ],
+    "time_diff": 0.050287485122680664,
+    "timestamp": "2025-05-27T14:18:29.507807"
+  },
+  {
+    "action": "move",
+    "position": [
+      405,
+      329
+    ],
+    "time_diff": 0.050287485122680664,
+    "timestamp": "2025-05-27T14:18:29.514589"
+  },
+  {
+    "action": "move",
+    "position": [
+      387,
+      322
+    ],
+    "time_diff": 0.050287485122680664,
+    "timestamp": "2025-05-27T14:18:29.521572"
+  },
+  {
+    "action": "move",
+    "position": [
+      375,
+      315
+    ],
+    "time_diff": 0.050287485122680664,
+    "timestamp": "2025-05-27T14:18:29.527358"
+  },
+  {
+    "action": "move",
+    "position": [
+      365,
+      311
+    ],
+    "time_diff": 0.050287485122680664,
+    "timestamp": "2025-05-27T14:18:29.533942"
+  },
+  {
+    "action": "move",
+    "position": [
+      357,
+      306
+    ],
+    "time_diff": 0.05023765563964844,
+    "timestamp": "2025-05-27T14:18:29.540311"
+  },
+  {
+    "action": "move",
+    "position": [
+      352,
+      305
+    ],
+    "time_diff": 0.05023765563964844,
+    "timestamp": "2025-05-27T14:18:29.547430"
+  },
+  {
+    "action": "move",
+    "position": [
+      349,
+      304
+    ],
+    "time_diff": 0.05023765563964844,
+    "timestamp": "2025-05-27T14:18:29.553074"
+  },
+  {
+    "action": "move",
+    "position": [
+      346,
+      304
+    ],
+    "time_diff": 0.05023765563964844,
+    "timestamp": "2025-05-27T14:18:29.560151"
+  },
+  {
+    "action": "move",
+    "position": [
+      344,
+      303
+    ],
+    "time_diff": 0.05023765563964844,
+    "timestamp": "2025-05-27T14:18:29.567155"
+  },
+  {
+    "action": "move",
+    "position": [
+      343,
+      303
+    ],
+    "time_diff": 0.05023765563964844,
+    "timestamp": "2025-05-27T14:18:29.572597"
+  },
+  {
+    "action": "move",
+    "position": [
+      343,
+      302
+    ],
+    "time_diff": 0.05036354064941406,
+    "timestamp": "2025-05-27T14:18:29.625081"
+  },
+  {
+    "action": "move",
+    "position": [
+      342,
+      301
+    ],
+    "time_diff": 0.05036354064941406,
+    "timestamp": "2025-05-27T14:18:29.638801"
+  },
+  {
+    "action": "move",
+    "position": [
+      343,
+      301
+    ],
+    "time_diff": 0.050852060317993164,
+    "timestamp": "2025-05-27T14:18:29.644645"
+  },
+  {
+    "action": "move",
+    "position": [
+      342,
+      300
+    ],
+    "time_diff": 0.050852060317993164,
+    "timestamp": "2025-05-27T14:18:29.651042"
+  },
+  {
+    "action": "move",
+    "position": [
+      341,
+      298
+    ],
+    "time_diff": 0.050852060317993164,
+    "timestamp": "2025-05-27T14:18:29.657949"
+  },
+  {
+    "action": "move",
+    "position": [
+      341,
+      295
+    ],
+    "time_diff": 0.050852060317993164,
+    "timestamp": "2025-05-27T14:18:29.664221"
+  },
+  {
+    "action": "move",
+    "position": [
+      340,
+      291
+    ],
+    "time_diff": 0.050852060317993164,
+    "timestamp": "2025-05-27T14:18:29.671172"
+  },
+  {
+    "action": "move",
+    "position": [
+      339,
+      287
+    ],
+    "time_diff": 0.050852060317993164,
+    "timestamp": "2025-05-27T14:18:29.677321"
+  },
+  {
+    "action": "move",
+    "position": [
+      336,
+      282
+    ],
+    "time_diff": 0.050852060317993164,
+    "timestamp": "2025-05-27T14:18:29.684809"
+  },
+  {
+    "action": "move",
+    "position": [
+      335,
+      276
+    ],
+    "time_diff": 0.05050182342529297,
+    "timestamp": "2025-05-27T14:18:29.690668"
+  },
+  {
+    "action": "move",
+    "position": [
+      334,
+      273
+    ],
+    "time_diff": 0.05050182342529297,
+    "timestamp": "2025-05-27T14:18:29.697009"
+  },
+  {
+    "action": "move",
+    "position": [
+      333,
+      270
+    ],
+    "time_diff": 0.05050182342529297,
+    "timestamp": "2025-05-27T14:18:29.703053"
+  },
+  {
+    "action": "move",
+    "position": [
+      333,
+      268
+    ],
+    "time_diff": 0.05050182342529297,
+    "timestamp": "2025-05-27T14:18:29.710269"
+  },
+  {
+    "action": "move",
+    "position": [
+      333,
+      267
+    ],
+    "time_diff": 0.05050182342529297,
+    "timestamp": "2025-05-27T14:18:29.716216"
+  },
+  {
+    "action": "move",
+    "position": [
+      332,
+      267
+    ],
+    "time_diff": 0.05050182342529297,
+    "timestamp": "2025-05-27T14:18:29.723207"
+  },
+  {
+    "action": "move",
+    "position": [
+      332,
+      266
+    ],
+    "time_diff": 0.05050182342529297,
+    "timestamp": "2025-05-27T14:18:29.729725"
+  },
+  {
+    "action": "move",
+    "position": [
+      332,
+      265
+    ],
+    "time_diff": 0.05050182342529297,
+    "timestamp": "2025-05-27T14:18:29.736040"
+  },
+  {
+    "action": "move",
+    "position": [
+      332,
+      265
+    ],
+    "time_diff": 0.05037641525268555,
+    "timestamp": "2025-05-27T14:18:29.775199"
+  },
+  {
+    "action": "move",
+    "position": [
+      332,
+      264
+    ],
+    "time_diff": 0.05070805549621582,
+    "timestamp": "2025-05-27T14:18:29.814160"
+  },
+  {
+    "action": "move",
+    "position": [
+      332,
+      263
+    ],
+    "time_diff": 0.05070805549621582,
+    "timestamp": "2025-05-27T14:18:29.821149"
+  },
+  {
+    "action": "move",
+    "position": [
+      333,
+      262
+    ],
+    "time_diff": 0.05070805549621582,
+    "timestamp": "2025-05-27T14:18:29.827275"
+  },
+  {
+    "action": "move",
+    "position": [
+      333,
+      262
+    ],
+    "time_diff": 0.05070805549621582,
+    "timestamp": "2025-05-27T14:18:29.834164"
+  },
+  {
+    "action": "move",
+    "position": [
+      334,
+      261
+    ],
+    "time_diff": 0.05070805549621582,
+    "timestamp": "2025-05-27T14:18:29.840325"
+  },
+  {
+    "action": "move",
+    "position": [
+      333,
+      261
+    ],
+    "time_diff": 0.050586700439453125,
+    "timestamp": "2025-05-27T14:18:29.847325"
+  },
+  {
+    "action": "move",
+    "position": [
+      334,
+      261
+    ],
+    "time_diff": 0.050586700439453125,
+    "timestamp": "2025-05-27T14:18:29.853408"
+  },
+  {
+    "action": "move",
+    "position": [
+      336,
+      260
+    ],
+    "time_diff": 0.050586700439453125,
+    "timestamp": "2025-05-27T14:18:29.860411"
+  },
+  {
+    "action": "move",
+    "position": [
+      336,
+      259
+    ],
+    "time_diff": 0.050586700439453125,
+    "timestamp": "2025-05-27T14:18:29.866758"
+  },
+  {
+    "action": "move",
+    "position": [
+      336,
+      258
+    ],
+    "time_diff": 0.050586700439453125,
+    "timestamp": "2025-05-27T14:18:29.873129"
+  },
+  {
+    "action": "move",
+    "position": [
+      337,
+      258
+    ],
+    "time_diff": 0.050586700439453125,
+    "timestamp": "2025-05-27T14:18:29.879890"
+  },
+  {
+    "action": "move",
+    "position": [
+      338,
+      258
+    ],
+    "time_diff": 0.050586700439453125,
+    "timestamp": "2025-05-27T14:18:29.886018"
+  },
+  {
+    "action": "move",
+    "position": [
+      339,
+      257
+    ],
+    "time_diff": 0.050716400146484375,
+    "timestamp": "2025-05-27T14:18:29.899581"
+  },
+  {
+    "action": "move",
+    "position": [
+      339,
+      257
+    ],
+    "time_diff": 0.05061197280883789,
+    "timestamp": "2025-05-27T14:18:29.951178"
+  },
+  {
+    "action": "move",
+    "position": [
+      340,
+      257
+    ],
+    "time_diff": 0.05100584030151367,
+    "timestamp": "2025-05-27T14:18:30.049478"
+  },
+  {
+    "action": "press",
+    "button": "Button.left",
+    "position": [
+      340,
+      257
+    ],
+    "time_diff": 0.0512540340423584,
+    "timestamp": "2025-05-27T14:18:30.212238"
+  },
+  {
+    "action": "release",
+    "button": "Button.left",
+    "position": [
+      340,
+      257
+    ],
+    "time_diff": 0.05063986778259277,
+    "timestamp": "2025-05-27T14:18:30.437727"
+  }
+]
