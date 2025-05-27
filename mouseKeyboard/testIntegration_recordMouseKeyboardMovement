@@ -1,0 +1,43 @@
+import unittest
+import os
+import json
+import subprocess
+import tempfile
+import shutil
+
+class TestMouseKeyboardIntegration(unittest.TestCase):
+    def setUp(self):
+        self.test_dir = "dataMouseKeybord"
+        os.makedirs(self.test_dir, exist_ok=True)
+        self.test_file = os.path.join(self.test_dir, "test_integration.json")
+
+    def tearDown(self):
+        if os.path.exists(self.test_file):
+            os.remove(self.test_file)
+
+    def test_record_and_replay(self):
+        # Record (simulate)
+        result = subprocess.run(["python", "recordMouseKeyboardMovement.py", "record"], capture_output=True, text=True)
+        self.assertIn("Actions saved to", result.stdout)
+
+        # Find the new file
+        files = [f for f in os.listdir(self.test_dir) if f.endswith(".json")]
+        self.assertTrue(files)
+
+        # Replay
+        test_file_path = os.path.join(self.test_dir, files[0])
+        result = subprocess.run(["python", "recordMouseKeyboardMovement.py", "replay", "--file", files[0]], capture_output=True, text=True)
+        self.assertIn("Replay complete.", result.stdout)
+
+    def test_output_file_format(self):
+        # Create fake recording file
+        actions = [{"action": "move", "position": [100, 200], "time_diff": 0.1, "timestamp": "fake"}]
+        with open(self.test_file, 'w') as f:
+            json.dump(actions, f)
+
+        # Replay
+        result = subprocess.run(["python", "recordMouseKeyboardMovement.py", "replay", "--file", os.path.basename(self.test_file)], capture_output=True, text=True)
+        self.assertIn("Replay complete.", result.stdout)
+
+if __name__ == '__main__':
+    unittest.main()
