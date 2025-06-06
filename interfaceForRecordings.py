@@ -26,6 +26,7 @@ def should_stop():
 
 recorded_filename = {"name": None}
 
+# ...existing code...
 
 def start_record():
     global record_thread
@@ -53,15 +54,10 @@ def start_record():
             return
 
     def run_record():
-<<<<<<< HEAD
         filename = record(
             should_stop_callback=should_stop,
             filename=final_filename  # <-- on passe le nom choisi
         )
-=======
-
-        filename = record(filename=final_filename, should_stop_callback=should_stop)
->>>>>>> 1ff0a40c072a88c4c589cbb94ecb9738e775d77b
         recorded_filename["name"] = filename
 
     record_thread = Thread(target=run_record)
