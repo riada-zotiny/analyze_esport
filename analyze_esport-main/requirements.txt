@@ -1,6 +1,0 @@
-# requirements.txt
-pynput
-pyautogui
-mouse
-argparse
-pynput

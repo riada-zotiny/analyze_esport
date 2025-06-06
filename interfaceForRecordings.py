@@ -54,7 +54,10 @@ def start_record():
             return
 
     def run_record():
-        filename = record(should_stop_callback=should_stop)
+        filename = record(
+            should_stop_callback=should_stop,
+            filename=final_filename  # <-- on passe le nom choisi
+        )
         recorded_filename["name"] = filename
 
     record_thread = Thread(target=run_record)
@@ -113,7 +116,7 @@ record_button.pack(pady=10)
 stop_button = tk.Button(root, text="Arrêter", command=stop_record, font=("Arial", 10), bg="red", fg="white", width=20)
 stop_button.pack(pady=10)
 
-replay_button = tk.Button(root, text="Rejouer", command=start_replay, font=("Arial", 10), bg="blue", fg="white", width=20)
-replay_button.pack(pady=10)
+#replay_button = tk.Button(root, text="Rejouer", command=start_replay, font=("Arial", 10), bg="blue", fg="white", width=20)
+#replay_button.pack(pady=10)
 
 root.mainloop()
