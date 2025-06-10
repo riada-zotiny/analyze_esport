@@ -1,0 +1,56 @@
+import os
+import json
+from datetime import datetime
+
+data_dir = os.path.join(os.getcwd(), "dataMouseKeybord")
+files = [f for f in os.listdir(data_dir) if f.endswith(".json")]
+
+if not files:
+    print("Aucun fichier JSON trouvé dans dataMouseKeybord.")
+    exit()
+
+print("Fichiers disponibles :")
+for idx, fname in enumerate(files, 1):
+    print(f"{idx}. {fname}")
+
+choice = input("Entrez le numéro du fichier à importer : ")
+try:
+    idx = int(choice) - 1
+    if idx < 0 or idx >= len(files):
+        raise ValueError
+except ValueError:
+    print("Choix invalide.")
+    exit()
+
+selected_file = os.path.join(data_dir, files[idx])
+print(f"Fichier sélectionné : {selected_file}")
+
+
+with open(selected_file, "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+
+
+# Verfication de correspondance du temps 
+if isinstance(data, list) and data:
+    print("Premier élément du tableau :")
+    print(data[0])
+    start_time = data[0].get("timestamp", "Inconnu")
+    print(f"Heure de début : {start_time}") 
+    print("\nDernier élément du tableau :")
+    print(data[-1])
+    end_time = data[-1].get("timestamp", "Inconnu")
+    print(f"Heure de fin : {end_time}")
+
+    if start_time != "Inconnu" and end_time != "Inconnu":
+        try:
+            t1 = datetime.fromisoformat(start_time)
+            t2 = datetime.fromisoformat(end_time)
+            duree = t2 - t1
+            print(f"\nDurée totale : {duree}")
+        except Exception as e:
+            print("Erreur lors du calcul de la durée :", e)
+    else:
+        print("Impossible de calculer la durée (timestamp manquant).")
+else:
+    print("Le fichier ne contient pas un tableau JSON non vide.")

@@ -2,45 +2,31 @@ import socket
 import asyncio
 from g3pylib import connect_to_glasses
 import sys
-import aiohttp
-import shutil
+
 
 HOST = '0.0.0.0'
 PORT = 5000
 G3_HOSTNAME = "192.168.75.51"
 
+
+
 async def start_recording():
     async with connect_to_glasses.with_hostname(G3_HOSTNAME) as g3:
+        current_time = await g3.system.get_time()
+        print(f"Heure sur les lunettes : {current_time.isoformat()}")
         serial = await g3.system.get_recording_unit_serial()
         print(f"Connecté à : {serial}")
         await g3.recorder.start()
-        print("Enregistrement a commencé !")
+        print("Enregistrement démarré !")
 
 async def stop_recording():
     async with connect_to_glasses.with_hostname(G3_HOSTNAME) as g3:
-        serial = await g3.system.get_recording_unit_serial()
-        await g3.recorder.stop()
-        print("Enregistrement arrêté !")
-        
-        recordings = await g3.recordings.list()
-        if not recordings:
-            print("Aucun enregistrement trouvé.")
+        async with g3.recordings.keep_updated_in_context():
+            serial = await g3.system.get_recording_unit_serial()
+            await g3.recorder.stop()
+            print("Enregistrement arrêté !")
+       
             sys.exit()
-
-
-        last_recording = recordings[-1]
-        rec_id = last_recording["id"]
-        print(f"Téléchargement de l'enregistrement {rec_id}...")
-        url = f"http://{G3_HOSTNAME}/rest/recordings/{rec_id}/export"
-        async with aiohttp.ClientSession() as session:
-            async with session.get(url) as resp:
-                if resp.status == 200:
-                    with open(f"recording_{rec_id}.zip", "wb") as f:
-                        shutil.copyfileobj(await resp.content, f)
-                    print(f"Enregistrement sauvegardé sous recording_{rec_id}.zip")
-                else:
-                    print("Erreur lors du téléchargement :", resp.status)
-        sys.exit()
 
 def main():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:

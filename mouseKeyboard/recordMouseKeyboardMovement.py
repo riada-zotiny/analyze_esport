@@ -51,7 +51,7 @@ def get_next_filename(base_dir="dataMouseKeybord", base_name="mouse_keyboard_act
         i += 1
 
 def record(should_stop_callback=lambda: False, filename=None):
-    count_down_animation_config("record")
+    #count_down_animation_config("record")
     print("Recording started. Move the mouse around, perform actions, and type on the keyboard.")
 
     actions = []
