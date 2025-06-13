@@ -14,6 +14,8 @@ async def start_recording():
     async with connect_to_glasses.with_hostname(G3_HOSTNAME) as g3:
         current_time = await g3.system.get_time()
         print(f"Heure sur les lunettes : {current_time.isoformat()}")
+        await g3.system.set_time(current_time)
+        await g3.system.set_timezone("Europe/Paris")
         serial = await g3.system.get_recording_unit_serial()
         print(f"Connecté à : {serial}")
         await g3.recorder.start()
