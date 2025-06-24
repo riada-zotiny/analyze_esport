@@ -26,6 +26,7 @@ def should_stop():
 
 recorded_filename = {"name": None}
 
+# ...existing code...
 
 def start_record():
     global record_thread
@@ -53,39 +54,54 @@ def start_record():
             return
 
     def run_record():
-
-        filename = record(filename=final_filename, should_stop_callback=should_stop)
+        filename = record(
+            should_stop_callback=should_stop,
+            filename=final_filename  # <-- on passe le nom choisi
+        )
         recorded_filename["name"] = filename
 
     record_thread = Thread(target=run_record)
     record_thread.daemon = True
     record_thread.start()
+tobii_stopped = {"value": False}
+
+tobii_stopped = {"value": False}
 
 def stop_record():
-    recording_flag["stop"] = True
-
-    send = messagebox.askyesno("Envoyer un signal", "Voulez-vous envoyer un signal d'arrêt au Tobii ?")
-    if send:
+    if not tobii_stopped["value"]:
+        # Demande si on veut arrêter Tobii ET souris/clavier
+        send = messagebox.askyesno(
+            "Envoyer un signal",
+            "Voulez-vous envoyer un signal d'arrêt au Tobii et arrêter l'enregistrement souris/clavier ?"
+        )
         try:
-            send_signal("STOP")
+            if send:
+                send_signal("STOP")
+                tobii_stopped["value"] = True
+            # Dans tous les cas, on arrête souris/clavier
+            recording_flag["stop"] = True
+            messagebox.showinfo(
+                "Info",
+                "Enregistrement souris/clavier arrêté." +
+                ("\nSignal d'arrêt envoyé à Tobii." if send else "\nAucun signal envoyé à Tobii.")
+            )
+            # Affichage du message de fin
+            if recorded_filename["name"]:
+                try:
+                    date_part = recorded_filename["name"].rsplit("_", 1)[1].replace(".json", "")
+                    messagebox.showinfo("Enregistrement terminé", f"Fichier enregistré : {recorded_filename['name']}\nDate : {date_part}")
+                except Exception:
+                    messagebox.showinfo("Enregistrement terminé", f"Fichier enregistré : {recorded_filename['name']}")
+            else:
+                messagebox.showwarning("Enregistrement", "Aucun fichier n'a été enregistré.")
+            tobii_stopped["value"] = False  # Reset pour la prochaine session
+            return
         except ImportError as ie:
             messagebox.showerror("Erreur d'import", f"Impossible d'importer send_signal : {ie}")
             return
         except Exception as e:
             messagebox.showerror("Erreur réseau", f"Impossible d'envoyer le signal d'arrêt : {e}")
             return
-
-    if recorded_filename["name"]:
-
-        try:
-            date_part = recorded_filename["name"].rsplit("_", 1)[1].replace(".json", "")
-            messagebox.showinfo("Enregistrement terminé", f"Fichier enregistré : {recorded_filename['name']}\nDate : {date_part}")
-        except Exception:
-            messagebox.showinfo("Enregistrement terminé", f"Fichier enregistré : {recorded_filename['name']}")
-    else:
-        messagebox.showwarning("Enregistrement", "Aucun fichier n'a été enregistré.")
-
-
         
 def start_replay():
     file_path = filedialog.askopenfilename(
@@ -113,7 +129,7 @@ record_button.pack(pady=10)
 stop_button = tk.Button(root, text="Arrêter", command=stop_record, font=("Arial", 10), bg="red", fg="white", width=20)
 stop_button.pack(pady=10)
 
-replay_button = tk.Button(root, text="Rejouer", command=start_replay, font=("Arial", 10), bg="blue", fg="white", width=20)
-replay_button.pack(pady=10)
+#replay_button = tk.Button(root, text="Rejouer", command=start_replay, font=("Arial", 10), bg="blue", fg="white", width=20)
+#replay_button.pack(pady=10)
 
 root.mainloop()
