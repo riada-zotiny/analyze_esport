@@ -73,6 +73,17 @@ print(df.head())
 mode = input("\nChoisissez le type de visualisation ('heatmap' ou 'scanpath') : ").strip().lower()
 
 if mode == "heatmap":
+    clicks = df[(df['action'] == 'press') & (df['button'] == 'Button.left')]
+    scan_points = []
+    for _, row in clicks.iterrows():
+        if isinstance(row['position'], list) and len(row['position']) == 2:
+            scan_points.append({'x': row['x'], 'y': row['y'], 'timestamp': row['timestamp']})
+    if len(scan_points) > 4:
+        scan_points = scan_points[2:-2]
+    else:
+        scan_points = []
+
+    scan_df = pd.DataFrame(scan_points)        
     plt.figure(figsize=(10, 6))
     sns.kdeplot(x=df['x'], y=df['y'], fill=True, cmap="viridis", thresh=0.05)
     plt.title("Heatmap des mouvements du curseur")

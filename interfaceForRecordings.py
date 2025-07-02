@@ -69,7 +69,7 @@ tobii_stopped = {"value": False}
 
 def stop_record():
     if not tobii_stopped["value"]:
-        # Demande si on veut arrêter Tobii ET souris/clavier
+
         send = messagebox.askyesno(
             "Envoyer un signal",
             "Voulez-vous envoyer un signal d'arrêt au Tobii et arrêter l'enregistrement souris/clavier ?"
@@ -78,14 +78,13 @@ def stop_record():
             if send:
                 send_signal("STOP")
                 tobii_stopped["value"] = True
-            # Dans tous les cas, on arrête souris/clavier
             recording_flag["stop"] = True
             messagebox.showinfo(
                 "Info",
                 "Enregistrement souris/clavier arrêté." +
                 ("\nSignal d'arrêt envoyé à Tobii." if send else "\nAucun signal envoyé à Tobii.")
             )
-            # Affichage du message de fin
+    
             if recorded_filename["name"]:
                 try:
                     date_part = recorded_filename["name"].rsplit("_", 1)[1].replace(".json", "")
