@@ -70,14 +70,20 @@ print(df.head())
 mode = input("\nChoisissez le type de visualisation ('heatmap' ou 'scanpath') : ").strip().lower()
 
 if mode == "heatmap":
+    # Filtrer uniquement les positions lors d'un clic souris (action "press")
+    mouse_clicks = df[df['action'] == 'press'] 
+    mouse_clicks = mouse_clicks.dropna(subset=['x', 'y'])
     plt.figure(figsize=(10, 6))
-    sns.kdeplot(x=df['x'], y=df['y'], fill=True, cmap="viridis", thresh=0.05)
-    plt.title("Heatmap des mouvements du curseur")
-    plt.xlabel("Position X")
-    plt.ylabel("Position Y")
-    plt.xlim(0, 1920)
-    plt.ylim(0, 1080)
-    plt.show()
+    if not mouse_clicks.empty:
+        sns.kdeplot(x=mouse_clicks['x'], y=mouse_clicks['y'], fill=True, cmap="viridis", thresh=0.05)
+        plt.title("Heatmap des positions du curseur lors des clics souris")
+        plt.xlabel("Position X")
+        plt.ylabel("Position Y")
+        plt.xlim(0, 1920)
+        plt.ylim(0, 1080)
+        plt.show()
+    else:
+        print("Aucun clic souris à afficher pour la heatmap.")
 
 elif mode == "scanpath":
     clicks = df[(df['action'] == 'press') & (df['button'] == 'Button.left')]
