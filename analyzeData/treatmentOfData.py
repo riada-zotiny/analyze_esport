@@ -30,6 +30,16 @@ def type_of_data(df, kind_of_data, keyboard = None):
 # à venir 
 
  
+def type_of_vizualization(df, mode, time_begin, time_end):
+    if mode == "heatmap":
+        mouse_clicks = df[df['action'] == 'press']
+        return mouse_clicks
+    elif mode == "scanpath":
+        mouse_movements = df[df['action'] == 'move']
+        return mouse_movements
+    else:
+        raise ValueError("Mode de visualisation non reconnu. Choisissez 'heatmap' ou 'scanpath'.")
+
 
 
 
